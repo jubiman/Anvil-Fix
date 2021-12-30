@@ -15,7 +15,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.spongepowered.mixin'
 
 group = 'com.jubiman.anvilfix'
-version = '1.0-SNAPSHOT'
+version = '1.1'
 
 java {
     archivesBaseName = 'anvilfix'

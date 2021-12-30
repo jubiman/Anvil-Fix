@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
 @Mod("anvilfix")
 public class AnvilFix {
 	// Directly reference a log4j logger.
-	private static final Logger LOGGER = LogManager.getLogger();
+	private static final Logger LOGGER = LogManager.getLogger("Anvil FIx");
 
 	public AnvilFix() {
 		// Register the setup method for modloading
@@ -36,6 +36,10 @@ public class AnvilFix {
 
 		// Register ourselves for server and other game events we are interested in
 		MinecraftForge.EVENT_BUS.register(this);
+	}
+
+	public static Logger getLogger() {
+		return LOGGER;
 	}
 
 	private void setup(final FMLCommonSetupEvent event) {
